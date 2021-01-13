@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jogo.js"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body onresize="ajusteTela()" >
+    <div class="painel">
+        <div class="vidas">
+            <img id="v1" src="coracao_cheio.png" alt="">
+            <img id="v2" src="coracao_cheio.png" alt="">
+            <img id="v3" src="coracao_cheio.png" alt="">
+        </div>
+        <div class="cronometro">Tempo restante: <span id="cronometro"></span></div>
+
+    </div>
+
+
+    <script>
+
+        var criaMosquito = setInterval(() => {
+            posicaoRandom();  
+        }, criaMosquitoTempo);
+        document.getElementById('cronometro').innerHTML = tempo
+        
+    </script>
+    
+</body>
+</html>
